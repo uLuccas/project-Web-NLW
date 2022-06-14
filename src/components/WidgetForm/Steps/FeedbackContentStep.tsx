@@ -17,7 +17,7 @@ export function FeedbackContentStep({
 }: FeedbackContentStepProps) {
   const feedbackTypeInfo = feedbackTypes[feedbackType];
   const [screenshot, setScreenshot] = useState<string | null>(null);
-  const [comment, setComment] = useState("");
+  const [comment, setComment] = useState<string>("");
 
   function handleSubmitFeedback(event: FormEvent) {
     event.preventDefault();
